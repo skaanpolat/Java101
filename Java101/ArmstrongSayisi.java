@@ -38,7 +38,7 @@ public class ArmstrongSayisi {
             number /= 10; // Ayırdığın rakamı sayıdan çıkar ve yeni değeri sayıya tekrar ata.
 
             System.out.println("Sondaki rakam : " + digit);
-            System.out.println("Sondaki basamak eksliltilince kalan sayi : " + number + "\n");
+            System.out.println("Sondaki basamak eksiltilince kalan sayi : " + number + "\n");
 
             for (int i = 1; i <= digitPower; i++) {
                 singleDigitPower *= digit; //Her rakamın, basamak sayısı kadar kuvvetini al.
