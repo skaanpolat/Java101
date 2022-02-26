@@ -2,7 +2,7 @@ package Java101;
 
 import java.util.Scanner;
 
-public class DongulerlerATM {
+public class DongulerleATM {
     public static void main(String[] args) {
         String userID, userPassword;
         double bakiye = 0, islemTutari;
