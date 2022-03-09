@@ -51,8 +51,13 @@ public class Student {
         }
     }
 
-    void isPass() {
+    double calcAverage(){
         this.average = ((this.c1.note * 0.6) + (this.c1.vNote * 0.4) + ((this.c2.note * 0.7) + this.c2.vNote * 0.3) + ((this.c3.note * 0.8) + (this.c3.vNote * 0.2))) / (3.0);
+        return this.average;
+    }
+
+    void isPass() {
+
         if (this.average > 55) {
             System.out.println("Hababam sınıfı uyanıyor!");
 
@@ -74,7 +79,7 @@ public class Student {
         System.out.println(this.c1.name +" dersinin sözlü notu : "+this.c1.vNote + " ve ortalamaya etkisi %40");
         System.out.println(this.c2.name +" dersinin sözlü notu : "+this.c2.vNote + " ve ortalamaya etkisi %30");
         System.out.println(this.c3.name +" dersinin sözlü notu : "+this.c3.vNote + " ve ortalamaya etkisi %20");
-        System.out.println("Ortalamanız = " + this.average);
+        System.out.println("Ortalamanız = " + calcAverage());
         System.out.println("************************************************\n");
     }
 
